@@ -1,5 +1,5 @@
 FROM ruby:2.6.3
-RUN apt-get update -qq && apt-get install -y nodejs mysql-client default-libmysqlclient-dev
+RUN apt-get update -qq && apt-get install -y nodejs mariadb-client default-libmysqlclient-dev
 RUN gem install bundler -v 2.0.1
 RUN mkdir /myapp
 WORKDIR /myapp
